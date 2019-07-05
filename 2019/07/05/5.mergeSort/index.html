@@ -267,7 +267,7 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/3.insertionSort/" class="title">插入排序</a>
+                <a href="/2019/07/05/10.radixSort/" class="title">基数排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -297,21 +297,6 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/8.countingSort/" class="title">计数排序</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/算法/">算法</a>
-              </p>
-              <p class="item-title">
                 <a href="/2019/07/05/1.bubbleSort/" class="title">冒泡排序</a>
               </p>
               <p class="item-date">
@@ -327,7 +312,22 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/2.selectionSort/" class="title">选择排序</a>
+                <a href="/2019/07/05/8.countingSort/" class="title">计数排序</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/算法/">算法</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/05/3.insertionSort/" class="title">插入排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -390,6 +390,11 @@
 
 
         
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2019/07/05/5.mergeSort/" class="leancloud_visitors"  data-flag-title="归并排序">0</span>
+    </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/07/05/5.mergeSort/#comments" class="article-comment-link">评论</a></span>
         
@@ -487,12 +492,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2019/07/05/6.quickSort/" title="快速排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2019/07/05/4.shellSort/" title="希尔排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2019/07/04/十大经典排序算法/" title="十大经典排序算法"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2019/07/05/7.heapSort/" title="堆排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -625,6 +630,96 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
    
 
         
+            <!-- custom analytics part create by xiamo 和评论重复引入，导致AV报错，故注释掉
+            <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
+            <script defer>
+                AV.init({
+                    appId: 'gNf9Xu83nBMyNKenf9rNRKdk-gzGzoHsz',
+                    appKey: 'oSPoWVVUwfXSEoKFNaFSNdR5'
+                });
+
+                function showTime(Counter) {
+                    var query = new AV.Query(Counter);
+                    var visitors = $('.leancloud_visitors');
+                    query.greaterThanOrEqualTo("time", 0);
+                    query.find({
+                        success: function(results) {
+                            if (results.length == 0) {
+                                return;
+                            }
+                            var data = results;
+                            visitors.each(function() {
+                                var url = $(this).attr('id').trim();
+                                for (var i = 0; i < data.length; i++) {
+                                    var object = data[i];
+                                    var content = object.get('time');
+                                    var _url = object.get('url')
+                                    if (url == _url) {
+                                        $(this).text(content);
+                                    }
+                                }
+                            })
+
+                        },
+                        error: function(object, error) {
+                            console.log("Error: " + error.code + " " + error.message);
+                        }
+                    });
+                }
+
+                function addCount(Counter) {
+                    var Counter = AV.Object.extend("Counter");
+                    url = $(".leancloud_visitors").attr('id').trim();
+                    title = $(".leancloud_visitors").attr('data-flag-title').trim();
+                    var query = new AV.Query(Counter);
+                    query.equalTo("url", url);
+                    query.find({
+                        success: function(results) {
+                            if (results.length > 0) {
+                                var counter = results[0];
+                                counter.fetchWhenSave(true);
+                                counter.increment("time");
+                                counter.save(null, {
+                                    success: function(counter) {
+                                        var content = counter.get('time');
+                                        $(document.getElementById(url)).text(content);
+                                    },
+                                    error: function(counter, error) {
+                                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                                    }
+                                });
+                            } else {
+                                var newcounter = new Counter();
+                                newcounter.set("title", title);
+                                newcounter.set("url", url);
+                                newcounter.set("time", 1);
+                                newcounter.save(null, {
+                                    success: function(newcounter) {
+                                        console.log("newcounter.get('time')=" + newcounter.get('time'));
+                                        var content = newcounter.get('time');
+                                        $(document.getElementById(url)).text(content);
+                                    },
+                                    error: function(newcounter, error) {
+                                        console.log('Failed to create');
+                                    }
+                                });
+                            }
+                        },
+                        error: function(error) {
+                            console.log('Error:' + error.code + " " + error.message);
+                        }
+                    });
+                }
+                $(function() {
+                    var Counter = AV.Object.extend("Counter");
+                    if ($('.leancloud_visitors').length == 1) {
+                        addCount(Counter);
+                    } else {
+                        showTime(Counter);
+                    }
+                });
+            </script>
+            
 
 
    
