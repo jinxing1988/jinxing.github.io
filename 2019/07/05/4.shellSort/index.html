@@ -18,18 +18,18 @@
   
   
   <title>希尔排序 | Hexo</title>
-  <meta name="description" content="希尔排序希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率； 但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位；  希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序">
+  <meta name="description" content="希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率； 但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位；  希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="希尔排序">
 <meta property="og:url" content="http://junjun.vip/2019/07/05/4.shellSort/index.html">
 <meta property="og:site_name" content="君君教程网">
-<meta property="og:description" content="希尔排序希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率； 但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位；  希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序">
+<meta property="og:description" content="希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率； 但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位；  希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-05T08:35:09.309Z">
+<meta property="og:updated_time" content="2019-07-05T17:32:59.542Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="希尔排序">
-<meta name="twitter:description" content="希尔排序希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率； 但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位；  希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序">
+<meta name="twitter:description" content="希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率； 但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位；  希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记">
   <!-- Canonical links -->
   <link rel="canonical" href="http://junjun.vip/2019/07/05/4.shellSort/index.html">
   
@@ -217,7 +217,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/小程序/">小程序</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/算法/">算法</a><span class="category-list-count">11</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/小程序/">小程序</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/算法/">算法</a><span class="category-list-count">12</span></li></ul>
     </div>
   </div>
 
@@ -227,7 +227,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/flex布局/">flex布局</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">11</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/flex布局/">flex布局</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">12</span></li></ul>
     </div>
   </div>
 
@@ -246,7 +246,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">14</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">15</span></li></ul>
     </div>
   </div>
 
@@ -258,6 +258,21 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/算法/">算法</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/06/经典编程书籍大全/" class="title">经典编程书籍大全</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-05T16:00:00.000Z" itemprop="datePublished">2019-07-06</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -280,37 +295,7 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/3.insertionSort/" class="title">插入排序</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/算法/">算法</a>
-              </p>
-              <p class="item-title">
-                <a href="/2019/07/05/6.quickSort/" class="title">快速排序</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/算法/">算法</a>
-              </p>
-              <p class="item-title">
-                <a href="/2019/07/05/1.bubbleSort/" class="title">冒泡排序</a>
+                <a href="/2019/07/05/4.shellSort/" class="title">希尔排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -333,6 +318,21 @@
             </div>
           </li>
           
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/算法/">算法</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/05/1.bubbleSort/" class="title">冒泡排序</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
+              </p>
+            </div>
+          </li>
+          
       </ul>
     </div>
   </div>
@@ -348,7 +348,7 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#希尔排序"><span class="toc-number">1.</span> <span class="toc-text">希尔排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-算法步骤"><span class="toc-number">1.1.</span> <span class="toc-text">1. 算法步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-JavaScript-代码实现"><span class="toc-number">1.2.</span> <span class="toc-text">2. JavaScript 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Python-代码实现"><span class="toc-number">1.3.</span> <span class="toc-text">3. Python 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Go-代码实现"><span class="toc-number">1.4.</span> <span class="toc-text">4. Go 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Java-代码实现"><span class="toc-number">1.5.</span> <span class="toc-text">5. Java 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-PHP-代码实现"><span class="toc-number">1.6.</span> <span class="toc-text">6. PHP 代码实现</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-算法步骤"><span class="toc-number">1.</span> <span class="toc-text">1. 算法步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-JavaScript-代码实现"><span class="toc-number">2.</span> <span class="toc-text">2. JavaScript 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Python-代码实现"><span class="toc-number">3.</span> <span class="toc-text">3. Python 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Go-代码实现"><span class="toc-number">4.</span> <span class="toc-text">4. Go 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Java-代码实现"><span class="toc-number">5.</span> <span class="toc-text">5. Java 代码实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-PHP-代码实现"><span class="toc-number">6.</span> <span class="toc-text">6. PHP 代码实现</span></a></li></ol>
     </nav>
   </div>
 </aside>
@@ -402,7 +402,7 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h1><p>希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。</p>
+        <p>希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。</p>
 <p>希尔排序是基于插入排序的以下两点性质而提出改进方法的：</p>
 <ul>
 <li>插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率；</li>
@@ -483,12 +483,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2019/07/05/9.bucketSort/" title="桶排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2019/07/06/微信小程序Flex布局/" title="微信小程序4种常用的Flex布局模式"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2019/07/05/7.heapSort/" title="堆排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2019/07/05/10.radixSort/" title="基数排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
