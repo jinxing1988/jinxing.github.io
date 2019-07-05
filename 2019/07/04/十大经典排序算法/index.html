@@ -27,7 +27,7 @@
 <meta property="og:description" content="十大经典排序算法排序算法是《数据结构与算法》中最基本的算法之一。 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因排序的数据很大，一次不能容纳全部的排序记录，在排序过程中需要访问外存。常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。用一张图概括：  关于时间复杂度：  平方阶 (O(n2)) 排序 各类简单">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://junjun.vip/images/sort/sort.png">
-<meta property="og:updated_time" content="2019-07-05T08:34:55.989Z">
+<meta property="og:updated_time" content="2019-07-05T15:56:03.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="十大经典排序算法">
 <meta name="twitter:description" content="十大经典排序算法排序算法是《数据结构与算法》中最基本的算法之一。 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因排序的数据很大，一次不能容纳全部的排序记录，在排序过程中需要访问外存。常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。用一张图概括：  关于时间复杂度：  平方阶 (O(n2)) 排序 各类简单">
@@ -267,6 +267,21 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
+                <a href="/2019/07/05/3.insertionSort/" class="title">插入排序</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/算法/">算法</a>
+              </p>
+              <p class="item-title">
                 <a href="/2019/07/05/4.shellSort/" class="title">希尔排序</a>
               </p>
               <p class="item-date">
@@ -282,22 +297,7 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/8.countingSort/" class="title">计数排序</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/算法/">算法</a>
-              </p>
-              <p class="item-title">
-                <a href="/2019/07/05/7.heapSort/" class="title">堆排序</a>
+                <a href="/2019/07/05/10.radixSort/" class="title">基数排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -426,16 +426,16 @@
 <hr>
 <p><strong>GitBook 内容大纲</strong></p>
 <ol>
-<li><a href="../1.bubbleSort">冒泡排序</a></li>
-<li><a href="../2.selectionSort">选择排序</a></li>
-<li><a href="../3.insertionSort">插入排序</a></li>
-<li><a href="../4.shellSort">希尔排序</a></li>
-<li><a href="../5.mergeSort">归并排序</a></li>
-<li><a href="../6.quickSort">快速排序</a></li>
-<li><a href="../7.heapSort">堆排序</a></li>
-<li><a href="../8.countingSort">计数排序</a></li>
-<li><a href="../9.bucketSort">桶排序</a></li>
-<li><a href="../10.radixSort">基数排序</a></li>
+<li><a href="../../05/1.bubbleSort">冒泡排序</a></li>
+<li><a href="../../05/2.selectionSort">选择排序</a></li>
+<li><a href="../../05/3.insertionSort">插入排序</a></li>
+<li><a href="../../05/4.shellSort">希尔排序</a></li>
+<li><a href="../../05/5.mergeSort">归并排序</a></li>
+<li><a href="../../05/6.quickSort">快速排序</a></li>
+<li><a href="../../05/7.heapSort">堆排序</a></li>
+<li><a href="../../05/8.countingSort">计数排序</a></li>
+<li><a href="../../05/9.bucketSort">桶排序</a></li>
+<li><a href="../../05/10.radixSort">基数排序</a></li>
 </ol>
 <hr>
 <p>本书内容几乎完全来源于网络。</p>
@@ -498,12 +498,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2019/07/05/9.bucketSort/" title="桶排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2019/07/05/8.countingSort/" title="计数排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2019/07/03/hexo-pure/" title="hexo主题pure使用教程"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2019/07/03/hello-world/" title="hexo命令"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
