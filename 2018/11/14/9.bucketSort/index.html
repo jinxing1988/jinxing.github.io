@@ -17,18 +17,18 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>Hexo</title>
+  <title>桶排序 | Hexo</title>
   <meta name="description" content="桶排序桶排序是计数排序的升级版。它利用了函数的映射关系，高效与否的关键就在于这个映射函数的确定。为了使桶排序更加高效，我们需要做到这两点：  在额外空间充足的情况下，尽量增大桶的数量 使用的映射函数能够将输入的 N 个数据均匀的分配到 K 个桶中  同时，对于桶中元素的排序，选择何种比较排序算法对于性能的影响至关重要。 1. 什么时候最快当输入的数据可以均匀的分配到每一个桶中。 2. 什么时候最慢">
 <meta name="keywords" content="java,javascript,egret">
 <meta property="og:type" content="article">
-<meta property="og:title" content="星的博客">
+<meta property="og:title" content="桶排序">
 <meta property="og:url" content="https://jinxing88.github.io/2018/11/14/9.bucketSort/index.html">
 <meta property="og:site_name" content="星的博客">
 <meta property="og:description" content="桶排序桶排序是计数排序的升级版。它利用了函数的映射关系，高效与否的关键就在于这个映射函数的确定。为了使桶排序更加高效，我们需要做到这两点：  在额外空间充足的情况下，尽量增大桶的数量 使用的映射函数能够将输入的 N 个数据均匀的分配到 K 个桶中  同时，对于桶中元素的排序，选择何种比较排序算法对于性能的影响至关重要。 1. 什么时候最快当输入的数据可以均匀的分配到每一个桶中。 2. 什么时候最慢">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-14T12:35:46.000Z">
+<meta property="og:updated_time" content="2019-07-05T08:01:21.958Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="星的博客">
+<meta name="twitter:title" content="桶排序">
 <meta name="twitter:description" content="桶排序桶排序是计数排序的升级版。它利用了函数的映射关系，高效与否的关键就在于这个映射函数的确定。为了使桶排序更加高效，我们需要做到这两点：  在额外空间充足的情况下，尽量增大桶的数量 使用的映射函数能够将输入的 N 个数据均匀的分配到 K 个桶中  同时，对于桶中元素的排序，选择何种比较排序算法对于性能的影响至关重要。 1. 什么时候最快当输入的数据可以均匀的分配到每一个桶中。 2. 什么时候最慢">
   <!-- Canonical links -->
   <link rel="canonical" href="https://jinxing88.github.io/2018/11/14/9.bucketSort/index.html">
@@ -274,7 +274,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/6.quickSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/6.quickSort/" class="title">快速排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -289,7 +289,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/3.insertionSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/3.insertionSort/" class="title">插入排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -304,7 +304,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/4.shellSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/4.shellSort/" class="title">希尔排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -329,6 +329,14 @@
     
     <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      桶排序
+    </h1>
+  
+
+      
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
@@ -343,7 +351,7 @@
 
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/2018/11/14/9.bucketSort/" class="leancloud_visitors"  data-flag-title="">0</span>
+    	<span id="/2018/11/14/9.bucketSort/" class="leancloud_visitors"  data-flag-title="桶排序">0</span>
     </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/11/14/9.bucketSort/#comments" class="article-comment-link">评论</a></span>
@@ -373,7 +381,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://jinxing88.github.io/2018/11/14/9.bucketSort/" title="" target="_blank" rel="external">https://jinxing88.github.io/2018/11/14/9.bucketSort/</a>
+      <a href="https://jinxing88.github.io/2018/11/14/9.bucketSort/" title="桶排序" target="_blank" rel="external">https://jinxing88.github.io/2018/11/14/9.bucketSort/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -420,12 +428,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2018/11/14/8.countingSort/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2018/11/14/8.countingSort/" title="计数排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2018/11/14/1.bubbleSort/" title="(no title)"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2018/11/14/1.bubbleSort/" title="冒泡排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

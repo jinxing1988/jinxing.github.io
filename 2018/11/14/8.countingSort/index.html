@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>Hexo</title>
+  <title>计数排序 | Hexo</title>
   <meta name="description" content="计数排序计数排序的核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。 1. 动图演示 2. JavaScript 代码实现12345678910111213141516171819202122function countingSort(arr, maxValue) &amp;#123;    var bucket = ne">
 <meta name="keywords" content="java,javascript,egret">
 <meta property="og:type" content="article">
-<meta property="og:title" content="星的博客">
+<meta property="og:title" content="计数排序">
 <meta property="og:url" content="https://jinxing88.github.io/2018/11/14/8.countingSort/index.html">
 <meta property="og:site_name" content="星的博客">
 <meta property="og:description" content="计数排序计数排序的核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。 1. 动图演示 2. JavaScript 代码实现12345678910111213141516171819202122function countingSort(arr, maxValue) &amp;#123;    var bucket = ne">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://jinxing88.github.io/2018/11/14/8.countingSort/images/sort/countingSort.gif">
-<meta property="og:updated_time" content="2019-07-05T07:45:29.330Z">
+<meta property="og:image" content="https://jinxing88.github.io/images/sort/countingSort.gif">
+<meta property="og:updated_time" content="2019-07-05T08:01:14.596Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="星的博客">
+<meta name="twitter:title" content="计数排序">
 <meta name="twitter:description" content="计数排序计数排序的核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。 1. 动图演示 2. JavaScript 代码实现12345678910111213141516171819202122function countingSort(arr, maxValue) &amp;#123;    var bucket = ne">
-<meta name="twitter:image" content="https://jinxing88.github.io/2018/11/14/8.countingSort/images/sort/countingSort.gif">
+<meta name="twitter:image" content="https://jinxing88.github.io/images/sort/countingSort.gif">
   <!-- Canonical links -->
   <link rel="canonical" href="https://jinxing88.github.io/2018/11/14/8.countingSort/index.html">
   
@@ -276,7 +276,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/6.quickSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/6.quickSort/" class="title">快速排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -291,7 +291,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/3.insertionSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/3.insertionSort/" class="title">插入排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -306,7 +306,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/4.shellSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/4.shellSort/" class="title">希尔排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -331,6 +331,14 @@
     
     <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      计数排序
+    </h1>
+  
+
+      
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
@@ -345,7 +353,7 @@
 
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/2018/11/14/8.countingSort/" class="leancloud_visitors"  data-flag-title="">0</span>
+    	<span id="/2018/11/14/8.countingSort/" class="leancloud_visitors"  data-flag-title="计数排序">0</span>
     </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/11/14/8.countingSort/#comments" class="article-comment-link">评论</a></span>
@@ -355,7 +363,7 @@
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <h1 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序"></a>计数排序</h1><p>计数排序的核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。</p>
-<h2 id="1-动图演示"><a href="#1-动图演示" class="headerlink" title="1. 动图演示"></a>1. 动图演示</h2><p><img src="images/sort/countingSort.gif" alt="动图演示"></p>
+<h2 id="1-动图演示"><a href="#1-动图演示" class="headerlink" title="1. 动图演示"></a>1. 动图演示</h2><p><img src="/images/sort/countingSort.gif" alt="动图演示"></p>
 <h2 id="2-JavaScript-代码实现"><a href="#2-JavaScript-代码实现" class="headerlink" title="2. JavaScript 代码实现"></a>2. JavaScript 代码实现</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">countingSort</span>(<span class="params">arr, maxValue</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> bucket = <span class="keyword">new</span> <span class="built_in">Array</span>(maxValue+<span class="number">1</span>),</span><br><span class="line">        sortedIndex = <span class="number">0</span>;</span><br><span class="line">        arrLen = arr.length,</span><br><span class="line">        bucketLen = maxValue + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arrLen; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!bucket[arr[i]]) &#123;</span><br><span class="line">            bucket[arr[i]] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        bucket[arr[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; bucketLen; j++) &#123;</span><br><span class="line">        <span class="keyword">while</span>(bucket[j] &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            arr[sortedIndex++] = j;</span><br><span class="line">            bucket[j]--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="3-Python-代码实现"><a href="#3-Python-代码实现" class="headerlink" title="3. Python 代码实现"></a>3. Python 代码实现</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">countingSort</span><span class="params">(arr, maxValue)</span>:</span></span><br><span class="line">    bucketLen = maxValue+<span class="number">1</span></span><br><span class="line">    bucket = [<span class="number">0</span>]*bucketLen</span><br><span class="line">    sortedIndex =<span class="number">0</span></span><br><span class="line">    arrLen = len(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(arrLen):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> bucket[arr[i]]:</span><br><span class="line">            bucket[arr[i]]=<span class="number">0</span></span><br><span class="line">        bucket[arr[i]]+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(bucketLen):</span><br><span class="line">        <span class="keyword">while</span> bucket[j]&gt;<span class="number">0</span>:</span><br><span class="line">            arr[sortedIndex] = j</span><br><span class="line">            sortedIndex+=<span class="number">1</span></span><br><span class="line">            bucket[j]-=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> arr</span><br></pre></td></tr></table></figure>
@@ -373,7 +381,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://jinxing88.github.io/2018/11/14/8.countingSort/" title="" target="_blank" rel="external">https://jinxing88.github.io/2018/11/14/8.countingSort/</a>
+      <a href="https://jinxing88.github.io/2018/11/14/8.countingSort/" title="计数排序" target="_blank" rel="external">https://jinxing88.github.io/2018/11/14/8.countingSort/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -420,12 +428,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2018/11/14/7.heapSort/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2018/11/14/7.heapSort/" title="堆排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2018/11/14/9.bucketSort/" title="(no title)"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2018/11/14/9.bucketSort/" title="桶排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

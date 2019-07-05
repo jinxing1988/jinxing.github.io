@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>Hexo</title>
+  <title>堆排序 | Hexo</title>
   <meta name="description" content="堆排序堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。堆排序可以说是一种利用堆的概念来排序的选择排序。分为两种方法：  大顶堆：每个节点的值都大于或等于其子节点的值，在堆排序算法中用于升序排列； 小顶堆：每个节点的值都小于或等于其子节点的值，在堆排序算法中用于降序排列；">
 <meta name="keywords" content="java,javascript,egret">
 <meta property="og:type" content="article">
-<meta property="og:title" content="星的博客">
+<meta property="og:title" content="堆排序">
 <meta property="og:url" content="https://jinxing88.github.io/2018/11/14/7.heapSort/index.html">
 <meta property="og:site_name" content="星的博客">
 <meta property="og:description" content="堆排序堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。堆排序可以说是一种利用堆的概念来排序的选择排序。分为两种方法：  大顶堆：每个节点的值都大于或等于其子节点的值，在堆排序算法中用于升序排列； 小顶堆：每个节点的值都小于或等于其子节点的值，在堆排序算法中用于降序排列；">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://jinxing88.github.io/2018/11/14/7.heapSort/images/sort/heapSort.gif">
-<meta property="og:updated_time" content="2019-07-05T07:45:33.192Z">
+<meta property="og:image" content="https://jinxing88.github.io/images/sort/heapSort.gif">
+<meta property="og:updated_time" content="2019-07-05T08:01:01.509Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="星的博客">
+<meta name="twitter:title" content="堆排序">
 <meta name="twitter:description" content="堆排序堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。堆排序可以说是一种利用堆的概念来排序的选择排序。分为两种方法：  大顶堆：每个节点的值都大于或等于其子节点的值，在堆排序算法中用于升序排列； 小顶堆：每个节点的值都小于或等于其子节点的值，在堆排序算法中用于降序排列；">
-<meta name="twitter:image" content="https://jinxing88.github.io/2018/11/14/7.heapSort/images/sort/heapSort.gif">
+<meta name="twitter:image" content="https://jinxing88.github.io/images/sort/heapSort.gif">
   <!-- Canonical links -->
   <link rel="canonical" href="https://jinxing88.github.io/2018/11/14/7.heapSort/index.html">
   
@@ -276,7 +276,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/6.quickSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/6.quickSort/" class="title">快速排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -291,7 +291,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/3.insertionSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/3.insertionSort/" class="title">插入排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -306,7 +306,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/4.shellSort/" class="title">(no title)</a>
+                <a href="/2018/11/14/4.shellSort/" class="title">希尔排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -331,6 +331,14 @@
     
     <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      堆排序
+    </h1>
+  
+
+      
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
@@ -345,7 +353,7 @@
 
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/2018/11/14/7.heapSort/" class="leancloud_visitors"  data-flag-title="">0</span>
+    	<span id="/2018/11/14/7.heapSort/" class="leancloud_visitors"  data-flag-title="堆排序">0</span>
     </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/11/14/7.heapSort/#comments" class="article-comment-link">评论</a></span>
@@ -370,7 +378,7 @@
 <li><p>重复步骤 2，直到堆的尺寸为 1。</p>
 </li>
 </ol>
-<h2 id="2-动图演示"><a href="#2-动图演示" class="headerlink" title="2. 动图演示"></a>2. 动图演示</h2><p><img src="images/sort/heapSort.gif" alt="动图演示"></p>
+<h2 id="2-动图演示"><a href="#2-动图演示" class="headerlink" title="2. 动图演示"></a>2. 动图演示</h2><p><img src="/images/sort/heapSort.gif" alt="动图演示"></p>
 <h2 id="3-JavaScript-代码实现"><a href="#3-JavaScript-代码实现" class="headerlink" title="3. JavaScript 代码实现"></a>3. JavaScript 代码实现</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> len;    <span class="comment">// 因为声明的多个函数都需要数据长度，所以把len设置成为全局变量</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">buildMaxHeap</span>(<span class="params">arr</span>) </span>&#123;   <span class="comment">// 建立大顶堆</span></span><br><span class="line">    len = arr.length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="built_in">Math</span>.floor(len/<span class="number">2</span>); i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        heapify(arr, i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">heapify</span>(<span class="params">arr, i</span>) </span>&#123;     <span class="comment">// 堆调整</span></span><br><span class="line">    <span class="keyword">var</span> left = <span class="number">2</span> * i + <span class="number">1</span>,</span><br><span class="line">        right = <span class="number">2</span> * i + <span class="number">2</span>,</span><br><span class="line">        largest = i;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (left &lt; len &amp;&amp; arr[left] &gt; arr[largest]) &#123;</span><br><span class="line">        largest = left;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (right &lt; len &amp;&amp; arr[right] &gt; arr[largest]) &#123;</span><br><span class="line">        largest = right;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (largest != i) &#123;</span><br><span class="line">        swap(arr, i, largest);</span><br><span class="line">        heapify(arr, largest);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">swap</span>(<span class="params">arr, i, j</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> temp = arr[i];</span><br><span class="line">    arr[i] = arr[j];</span><br><span class="line">    arr[j] = temp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">heapSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    buildMaxHeap(arr);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = arr.length<span class="number">-1</span>; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">        swap(arr, <span class="number">0</span>, i);</span><br><span class="line">        len--;</span><br><span class="line">        heapify(arr, <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="4-Python-代码实现"><a href="#4-Python-代码实现" class="headerlink" title="4. Python 代码实现"></a>4. Python 代码实现</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">buildMaxHeap</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">import</span> math</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(math.floor(len(arr)/<span class="number">2</span>),<span class="number">-1</span>,<span class="number">-1</span>):</span><br><span class="line">        heapify(arr,i)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">heapify</span><span class="params">(arr, i)</span>:</span></span><br><span class="line">    left = <span class="number">2</span>*i+<span class="number">1</span></span><br><span class="line">    right = <span class="number">2</span>*i+<span class="number">2</span></span><br><span class="line">    largest = i</span><br><span class="line">    <span class="keyword">if</span> left &lt; arrLen <span class="keyword">and</span> arr[left] &gt; arr[largest]:</span><br><span class="line">        largest = left</span><br><span class="line">    <span class="keyword">if</span> right &lt; arrLen <span class="keyword">and</span> arr[right] &gt; arr[largest]:</span><br><span class="line">        largest = right</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> largest != i:</span><br><span class="line">        swap(arr, i, largest)</span><br><span class="line">        heapify(arr, largest)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">swap</span><span class="params">(arr, i, j)</span>:</span></span><br><span class="line">    arr[i], arr[j] = arr[j], arr[i]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">heapSort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> arrLen</span><br><span class="line">    arrLen = len(arr)</span><br><span class="line">    buildMaxHeap(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(arr)<span class="number">-1</span>,<span class="number">0</span>,<span class="number">-1</span>):</span><br><span class="line">        swap(arr,<span class="number">0</span>,i)</span><br><span class="line">        arrLen -=<span class="number">1</span></span><br><span class="line">        heapify(arr, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> arr</span><br></pre></td></tr></table></figure>
@@ -388,7 +396,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://jinxing88.github.io/2018/11/14/7.heapSort/" title="" target="_blank" rel="external">https://jinxing88.github.io/2018/11/14/7.heapSort/</a>
+      <a href="https://jinxing88.github.io/2018/11/14/7.heapSort/" title="堆排序" target="_blank" rel="external">https://jinxing88.github.io/2018/11/14/7.heapSort/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -435,12 +443,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2018/11/14/10.radixSort/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2018/11/14/10.radixSort/" title="基数排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2018/11/14/8.countingSort/" title="(no title)"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2018/11/14/8.countingSort/" title="计数排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
