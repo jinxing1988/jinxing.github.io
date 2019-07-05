@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jinxing88.github.io/about/index.html</loc>
+    
+    <lastmod>2019-07-05T09:02:37.175Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jinxing88.github.io/2019/07/05/hexo-pure/</loc>
     
     <lastmod>2019-07-05T08:36:03.017Z</lastmod>
@@ -79,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://jinxing88.github.io/2018/11/14/sort-README/</loc>
+    <loc>https://jinxing88.github.io/2018/11/14/2018-11-13-%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
     
     <lastmod>2019-07-05T08:34:55.989Z</lastmod>
     
@@ -93,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://jinxing88.github.io/categories/index.html</loc>
+    <loc>https://jinxing88.github.io/tags/index.html</loc>
     
     <lastmod>2019-07-05T06:53:55.272Z</lastmod>
     
@@ -107,23 +114,16 @@
   </url>
   
   <url>
+    <loc>https://jinxing88.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-07-05T06:53:55.272Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jinxing88.github.io/repository/index.html</loc>
     
     <lastmod>2019-07-05T06:53:55.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jinxing88.github.io/tags/index.html</loc>
-    
-    <lastmod>2019-07-05T06:53:55.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jinxing88.github.io/about/index.html</loc>
-    
-    <lastmod>2019-07-05T06:53:55.271Z</lastmod>
     
   </url>
   
