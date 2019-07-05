@@ -26,12 +26,12 @@
 <meta property="og:site_name" content="星的博客">
 <meta property="og:description" content="归并排序归并排序（Merge sort）是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。 作为一种典型的分而治之思想的算法应用，归并排序的实现由两种方法：  自上而下的递归（所有递归的方法都可以用迭代重写，所以就有了第 2 种方法）； 自下而上的迭代；  在《数据结构与算法 JavaScript 描述》中，作者给出了自下而上的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://jinxing88.github.io/2018/11/14/5.mergeSort/images/sort/mergeSort.gif">
-<meta property="og:updated_time" content="2019-07-05T08:00:37.046Z">
+<meta property="og:image" content="https://jinxing88.github.io/images/sort/mergeSort.gif">
+<meta property="og:updated_time" content="2019-07-05T08:04:58.422Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="归并排序">
 <meta name="twitter:description" content="归并排序归并排序（Merge sort）是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。 作为一种典型的分而治之思想的算法应用，归并排序的实现由两种方法：  自上而下的递归（所有递归的方法都可以用迭代重写，所以就有了第 2 种方法）； 自下而上的迭代；  在《数据结构与算法 JavaScript 描述》中，作者给出了自下而上的">
-<meta name="twitter:image" content="https://jinxing88.github.io/2018/11/14/5.mergeSort/images/sort/mergeSort.gif">
+<meta name="twitter:image" content="https://jinxing88.github.io/images/sort/mergeSort.gif">
   <!-- Canonical links -->
   <link rel="canonical" href="https://jinxing88.github.io/2018/11/14/5.mergeSort/index.html">
   
@@ -276,22 +276,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2018/11/14/6.quickSort/" class="title">快速排序</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/2018/11/14/3.insertionSort/" class="title">插入排序</a>
+                <a href="/2018/11/14/1.bubbleSort/" class="title">冒泡排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -307,6 +292,21 @@
               </p>
               <p class="item-title">
                 <a href="/2018/11/14/4.shellSort/" class="title">希尔排序</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2018/11/14/6.quickSort/" class="title">快速排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-11-14T12:35:46.000Z" itemprop="datePublished">2018-11-14</time>
@@ -387,7 +387,7 @@
 <li><p>将另一序列剩下的所有元素直接复制到合并序列尾。</p>
 </li>
 </ol>
-<h2 id="3-动图演示"><a href="#3-动图演示" class="headerlink" title="3. 动图演示"></a>3. 动图演示</h2><p><img src="images/sort/mergeSort.gif" alt="动图演示"></p>
+<h2 id="3-动图演示"><a href="#3-动图演示" class="headerlink" title="3. 动图演示"></a>3. 动图演示</h2><p><img src="/images/sort/mergeSort.gif" alt="动图演示"></p>
 <h2 id="4-JavaScript-代码实现"><a href="#4-JavaScript-代码实现" class="headerlink" title="4. JavaScript 代码实现"></a>4. JavaScript 代码实现</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mergeSort</span>(<span class="params">arr</span>) </span>&#123;  <span class="comment">// 采用自上而下的递归方法</span></span><br><span class="line">    <span class="keyword">var</span> len = arr.length;</span><br><span class="line">    <span class="keyword">if</span>(len &lt; <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> middle = <span class="built_in">Math</span>.floor(len / <span class="number">2</span>),</span><br><span class="line">        left = arr.slice(<span class="number">0</span>, middle),</span><br><span class="line">        right = arr.slice(middle);</span><br><span class="line">    <span class="keyword">return</span> merge(mergeSort(left), mergeSort(right));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">merge</span>(<span class="params">left, right</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> result = [];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (left.length &amp;&amp; right.length) &#123;</span><br><span class="line">        <span class="keyword">if</span> (left[<span class="number">0</span>] &lt;= right[<span class="number">0</span>]) &#123;</span><br><span class="line">            result.push(left.shift());</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result.push(right.shift());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (left.length)</span><br><span class="line">        result.push(left.shift());</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (right.length)</span><br><span class="line">        result.push(right.shift());</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="5-Python-代码实现"><a href="#5-Python-代码实现" class="headerlink" title="5. Python 代码实现"></a>5. Python 代码实现</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mergeSort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">import</span> math</span><br><span class="line">    <span class="keyword">if</span>(len(arr)&lt;<span class="number">2</span>):</span><br><span class="line">        <span class="keyword">return</span> arr</span><br><span class="line">    middle = math.floor(len(arr)/<span class="number">2</span>)</span><br><span class="line">    left, right = arr[<span class="number">0</span>:middle], arr[middle:]</span><br><span class="line">    <span class="keyword">return</span> merge(mergeSort(left), mergeSort(right))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge</span><span class="params">(left,right)</span>:</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">while</span> left <span class="keyword">and</span> right:</span><br><span class="line">        <span class="keyword">if</span> left[<span class="number">0</span>] &lt;= right[<span class="number">0</span>]:</span><br><span class="line">            result.append(left.pop(<span class="number">0</span>));</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            result.append(right.pop(<span class="number">0</span>));</span><br><span class="line">    <span class="keyword">while</span> left:</span><br><span class="line">        result.append(left.pop(<span class="number">0</span>));</span><br><span class="line">    <span class="keyword">while</span> right:</span><br><span class="line">        result.append(right.pop(<span class="number">0</span>));</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
@@ -452,12 +452,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2018/11/14/4.shellSort/" title="希尔排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2018/11/14/3.insertionSort/" title="插入排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2018/11/14/10.radixSort/" title="基数排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2018/11/14/9.bucketSort/" title="桶排序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

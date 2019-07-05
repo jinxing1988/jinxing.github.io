@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jinxing88.github.io/2018/11/14/5.mergeSort/</loc>
+    
+    <lastmod>2019-07-05T08:04:58.422Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jinxing88.github.io/2018/11/14/10.radixSort/</loc>
     
     <lastmod>2019-07-05T08:01:35.218Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://jinxing88.github.io/2018/11/14/6.quickSort/</loc>
     
     <lastmod>2019-07-05T08:00:51.278Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jinxing88.github.io/2018/11/14/5.mergeSort/</loc>
-    
-    <lastmod>2019-07-05T08:00:37.046Z</lastmod>
     
   </url>
   

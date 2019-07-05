@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jinxing88.github.io/2018/11/14/5.mergeSort/</loc>
+    <lastmod>2019-07-05</lastmod>
+  </url>  <url>
     <loc>https://jinxing88.github.io/2018/11/14/10.radixSort/</loc>
     <lastmod>2019-07-05</lastmod>
   </url>  <url>
@@ -14,9 +17,6 @@
     <lastmod>2019-07-05</lastmod>
   </url>  <url>
     <loc>https://jinxing88.github.io/2018/11/14/6.quickSort/</loc>
-    <lastmod>2019-07-05</lastmod>
-  </url>  <url>
-    <loc>https://jinxing88.github.io/2018/11/14/5.mergeSort/</loc>
     <lastmod>2019-07-05</lastmod>
   </url>  <url>
     <loc>https://jinxing88.github.io/2018/11/14/3.insertionSort/</loc>
