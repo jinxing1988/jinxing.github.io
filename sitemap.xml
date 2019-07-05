@@ -2,140 +2,140 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.junjun.vip/about/index.html</loc>
+    <loc>http://junjun.vip/about/index.html</loc>
     
     <lastmod>2019-07-05T09:02:37.175Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/03/hexo-pure/</loc>
+    <loc>http://junjun.vip/2019/07/03/hexo-pure/</loc>
     
     <lastmod>2019-07-05T08:36:03.017Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/03/hello-world/</loc>
+    <loc>http://junjun.vip/2019/07/03/hello-world/</loc>
     
     <lastmod>2019-07-05T08:35:52.485Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/10.radixSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/10.radixSort/</loc>
     
     <lastmod>2019-07-05T08:35:36.401Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/9.bucketSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/9.bucketSort/</loc>
     
     <lastmod>2019-07-05T08:35:33.231Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/8.countingSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/8.countingSort/</loc>
     
     <lastmod>2019-07-05T08:35:30.458Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/7.heapSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/7.heapSort/</loc>
     
     <lastmod>2019-07-05T08:35:27.844Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/6.quickSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/6.quickSort/</loc>
     
     <lastmod>2019-07-05T08:35:22.665Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/4.shellSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/4.shellSort/</loc>
     
     <lastmod>2019-07-05T08:35:09.309Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/3.insertionSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/3.insertionSort/</loc>
     
     <lastmod>2019-07-05T08:35:05.318Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/2.selectionSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/2.selectionSort/</loc>
     
     <lastmod>2019-07-05T08:35:01.861Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/1.bubbleSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/1.bubbleSort/</loc>
     
     <lastmod>2019-07-05T08:34:59.204Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/04/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
+    <loc>http://junjun.vip/2019/07/04/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
     
     <lastmod>2019-07-05T08:34:55.989Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/2019/07/05/5.mergeSort/</loc>
+    <loc>http://junjun.vip/2019/07/05/5.mergeSort/</loc>
     
     <lastmod>2019-07-05T08:34:46.374Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/repository/index.html</loc>
+    <loc>http://junjun.vip/tags/index.html</loc>
     
     <lastmod>2019-07-05T06:53:55.272Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/tags/index.html</loc>
+    <loc>http://junjun.vip/categories/index.html</loc>
     
     <lastmod>2019-07-05T06:53:55.272Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/categories/index.html</loc>
+    <loc>http://junjun.vip/repository/index.html</loc>
     
     <lastmod>2019-07-05T06:53:55.272Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/links/index.html</loc>
+    <loc>http://junjun.vip/links/index.html</loc>
     
     <lastmod>2019-07-05T06:53:55.272Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip/books/index.html</loc>
+    <loc>http://junjun.vip/books/index.html</loc>
     
     <lastmod>2019-07-05T06:53:55.271Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.junjun.vip//404.html</loc>
+    <loc>http://junjun.vip//404.html</loc>
     
     <lastmod>2019-07-05T06:53:55.270Z</lastmod>
     

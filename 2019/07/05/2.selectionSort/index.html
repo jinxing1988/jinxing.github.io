@@ -22,18 +22,18 @@
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="选择排序">
-<meta property="og:url" content="http://blog.junjun.vip/2019/07/05/2.selectionSort/index.html">
+<meta property="og:url" content="http://junjun.vip/2019/07/05/2.selectionSort/index.html">
 <meta property="og:site_name" content="星的博客">
 <meta property="og:description" content="选择排序选择排序是一种简单直观的排序算法，无论什么数据进去都是 O(n²) 的时间复杂度。所以用到它的时候，数据规模越小越好。唯一的好处可能就是不占用额外的内存空间了吧。 1. 算法步骤 首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置  再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。  重复第二步，直到所有元素均排序完毕。   2. 动图演示 3. Java">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://blog.junjun.vip/images/sort/selectionSort.gif">
+<meta property="og:image" content="http://junjun.vip/images/sort/selectionSort.gif">
 <meta property="og:updated_time" content="2019-07-05T08:35:01.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="选择排序">
 <meta name="twitter:description" content="选择排序选择排序是一种简单直观的排序算法，无论什么数据进去都是 O(n²) 的时间复杂度。所以用到它的时候，数据规模越小越好。唯一的好处可能就是不占用额外的内存空间了吧。 1. 算法步骤 首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置  再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。  重复第二步，直到所有元素均排序完毕。   2. 动图演示 3. Java">
-<meta name="twitter:image" content="http://blog.junjun.vip/images/sort/selectionSort.gif">
+<meta name="twitter:image" content="http://junjun.vip/images/sort/selectionSort.gif">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://blog.junjun.vip/2019/07/05/2.selectionSort/index.html">
+  <link rel="canonical" href="http://junjun.vip/2019/07/05/2.selectionSort/index.html">
   
     <link rel="alternate" href="/atom.xml" title="星的博客" type="application/atom+xml">
   
@@ -312,7 +312,7 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/10.radixSort/" class="title">基数排序</a>
+                <a href="/2019/07/05/1.bubbleSort/" class="title">冒泡排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -327,7 +327,7 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/1.bubbleSort/" class="title">冒泡排序</a>
+                <a href="/2019/07/05/10.radixSort/" class="title">基数排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -431,7 +431,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://blog.junjun.vip/2019/07/05/2.selectionSort/" title="选择排序" target="_blank" rel="external">http://blog.junjun.vip/2019/07/05/2.selectionSort/</a>
+      <a href="http://junjun.vip/2019/07/05/2.selectionSort/" title="选择排序" target="_blank" rel="external">http://junjun.vip/2019/07/05/2.selectionSort/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -478,7 +478,7 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2019/07/05/1.bubbleSort/" title="冒泡排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2019/07/05/10.radixSort/" title="基数排序"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
@@ -615,97 +615,98 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
    
 
+        
+            <!-- custom analytics part create by xiamo -->
+            <script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+            <script defer>
+                window.AV = require('leancloud-storage');
+                AV.init({
+                    appId: 'gNf9Xu83nBMyNKenf9rNRKdk-gzGzoHsz',
+                    appKey: 'oSPoWVVUwfXSEoKFNaFSNdR5'
+                });
 
-<!-- custom analytics part create by xiamo -->
-<script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
-<script defer>
-AV.init({
-  appId: 'gNf9Xu83nBMyNKenf9rNRKdk-gzGzoHsz',
-  appKey: 'oSPoWVVUwfXSEoKFNaFSNdR5'
-});
+                function showTime(Counter) {
+                    var query = new AV.Query(Counter);
+                    var visitors = $('.leancloud_visitors');
+                    query.greaterThanOrEqualTo("time", 0);
+                    query.find({
+                        success: function(results) {
+                            if (results.length == 0) {
+                                return;
+                            }
+                            var data = results;
+                            visitors.each(function() {
+                                var url = $(this).attr('id').trim();
+                                for (var i = 0; i < data.length; i++) {
+                                    var object = data[i];
+                                    var content = object.get('time');
+                                    var _url = object.get('url')
+                                    if (url == _url) {
+                                        $(this).text(content);
+                                    }
+                                }
+                            })
 
-function showTime(Counter) {
-	var query = new AV.Query(Counter);
-		var visitors= $('.leancloud_visitors');
-		query.greaterThanOrEqualTo("time", 0);		
-		query.find({
-			success: function(results) {
-				if (results.length == 0) {				
-					return;
-				}
-				var data = results;
-				visitors.each(function(){
-					var url = $(this).attr('id').trim();					
-					for (var i = 0; i < data.length; i++) {
-						var object = data[i];
-						var content = object.get('time');
-						var _url = object.get('url')
-						if(url == _url){
-							$(this).text(content);
-						}
-					}
-				})
-				
-			},
-			error: function(object, error) {
-				console.log("Error: " + error.code + " " + error.message);
-			}
-		});
-}
+                        },
+                        error: function(object, error) {
+                            console.log("Error: " + error.code + " " + error.message);
+                        }
+                    });
+                }
 
-function addCount(Counter) {
-	var Counter = AV.Object.extend("Counter");
-	url = $(".leancloud_visitors").attr('id').trim();
-	title = $(".leancloud_visitors").attr('data-flag-title').trim();
-	var query = new AV.Query(Counter);
-	query.equalTo("url", url);
-	query.find({
-		success: function(results) {
-			if (results.length > 0) {
-				var counter = results[0];
-				counter.fetchWhenSave(true);
-				counter.increment("time");
-				counter.save(null, {
-					success: function(counter) {
-						var content = counter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(counter, error) {
-						console.log('Failed to save Visitor num, with error message: ' + error.message);
-					}
-				});
-			} else {
-				var newcounter = new Counter();
-				newcounter.set("title", title);
-				newcounter.set("url", url);
-				newcounter.set("time", 1);
-				newcounter.save(null, {
-					success: function(newcounter) {
-					    console.log("newcounter.get('time')="+newcounter.get('time'));
-						var content = newcounter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(newcounter, error) {
-						console.log('Failed to create');
-					}
-				});
-			}
-		},
-		error: function(error) {
-			console.log('Error:' + error.code + " " + error.message);
-		}
-	});
-}
-$(function() {
-	var Counter = AV.Object.extend("Counter");
-	if ($('.leancloud_visitors').length == 1) {
-		addCount(Counter);
-	} else {
-		showTime(Counter);
-	}
-}); 
-</script>
-
+                function addCount(Counter) {
+                    var Counter = AV.Object.extend("Counter");
+                    url = $(".leancloud_visitors").attr('id').trim();
+                    title = $(".leancloud_visitors").attr('data-flag-title').trim();
+                    var query = new AV.Query(Counter);
+                    query.equalTo("url", url);
+                    query.find({
+                        success: function(results) {
+                            if (results.length > 0) {
+                                var counter = results[0];
+                                counter.fetchWhenSave(true);
+                                counter.increment("time");
+                                counter.save(null, {
+                                    success: function(counter) {
+                                        var content = counter.get('time');
+                                        $(document.getElementById(url)).text(content);
+                                    },
+                                    error: function(counter, error) {
+                                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                                    }
+                                });
+                            } else {
+                                var newcounter = new Counter();
+                                newcounter.set("title", title);
+                                newcounter.set("url", url);
+                                newcounter.set("time", 1);
+                                newcounter.save(null, {
+                                    success: function(newcounter) {
+                                        console.log("newcounter.get('time')=" + newcounter.get('time'));
+                                        var content = newcounter.get('time');
+                                        $(document.getElementById(url)).text(content);
+                                    },
+                                    error: function(newcounter, error) {
+                                        console.log('Failed to create');
+                                    }
+                                });
+                            }
+                        },
+                        error: function(error) {
+                            console.log('Error:' + error.code + " " + error.message);
+                        }
+                    });
+                }
+                $(function() {
+                    var Counter = AV.Object.extend("Counter");
+                    if ($('.leancloud_visitors').length == 1) {
+                        addCount(Counter);
+                    } else {
+                        showTime(Counter);
+                    }
+                });
+            </script>
+            
 
 
    

@@ -22,18 +22,18 @@
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="堆排序">
-<meta property="og:url" content="http://blog.junjun.vip/2019/07/05/7.heapSort/index.html">
+<meta property="og:url" content="http://junjun.vip/2019/07/05/7.heapSort/index.html">
 <meta property="og:site_name" content="星的博客">
 <meta property="og:description" content="堆排序堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。堆排序可以说是一种利用堆的概念来排序的选择排序。分为两种方法：  大顶堆：每个节点的值都大于或等于其子节点的值，在堆排序算法中用于升序排列； 小顶堆：每个节点的值都小于或等于其子节点的值，在堆排序算法中用于降序排列；">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://blog.junjun.vip/images/sort/heapSort.gif">
+<meta property="og:image" content="http://junjun.vip/images/sort/heapSort.gif">
 <meta property="og:updated_time" content="2019-07-05T08:35:27.844Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="堆排序">
 <meta name="twitter:description" content="堆排序堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。堆排序可以说是一种利用堆的概念来排序的选择排序。分为两种方法：  大顶堆：每个节点的值都大于或等于其子节点的值，在堆排序算法中用于升序排列； 小顶堆：每个节点的值都小于或等于其子节点的值，在堆排序算法中用于降序排列；">
-<meta name="twitter:image" content="http://blog.junjun.vip/images/sort/heapSort.gif">
+<meta name="twitter:image" content="http://junjun.vip/images/sort/heapSort.gif">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://blog.junjun.vip/2019/07/05/7.heapSort/index.html">
+  <link rel="canonical" href="http://junjun.vip/2019/07/05/7.heapSort/index.html">
   
     <link rel="alternate" href="/atom.xml" title="星的博客" type="application/atom+xml">
   
@@ -312,7 +312,7 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/10.radixSort/" class="title">基数排序</a>
+                <a href="/2019/07/05/1.bubbleSort/" class="title">冒泡排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -327,7 +327,7 @@
                 <a class="category-link" href="/categories/算法/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/05/1.bubbleSort/" class="title">冒泡排序</a>
+                <a href="/2019/07/05/10.radixSort/" class="title">基数排序</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-04T16:00:00.000Z" itemprop="datePublished">2019-07-05</time>
@@ -436,7 +436,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://blog.junjun.vip/2019/07/05/7.heapSort/" title="堆排序" target="_blank" rel="external">http://blog.junjun.vip/2019/07/05/7.heapSort/</a>
+      <a href="http://junjun.vip/2019/07/05/7.heapSort/" title="堆排序" target="_blank" rel="external">http://junjun.vip/2019/07/05/7.heapSort/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -620,97 +620,98 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
    
 
+        
+            <!-- custom analytics part create by xiamo -->
+            <script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+            <script defer>
+                window.AV = require('leancloud-storage');
+                AV.init({
+                    appId: 'gNf9Xu83nBMyNKenf9rNRKdk-gzGzoHsz',
+                    appKey: 'oSPoWVVUwfXSEoKFNaFSNdR5'
+                });
 
-<!-- custom analytics part create by xiamo -->
-<script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
-<script defer>
-AV.init({
-  appId: 'gNf9Xu83nBMyNKenf9rNRKdk-gzGzoHsz',
-  appKey: 'oSPoWVVUwfXSEoKFNaFSNdR5'
-});
+                function showTime(Counter) {
+                    var query = new AV.Query(Counter);
+                    var visitors = $('.leancloud_visitors');
+                    query.greaterThanOrEqualTo("time", 0);
+                    query.find({
+                        success: function(results) {
+                            if (results.length == 0) {
+                                return;
+                            }
+                            var data = results;
+                            visitors.each(function() {
+                                var url = $(this).attr('id').trim();
+                                for (var i = 0; i < data.length; i++) {
+                                    var object = data[i];
+                                    var content = object.get('time');
+                                    var _url = object.get('url')
+                                    if (url == _url) {
+                                        $(this).text(content);
+                                    }
+                                }
+                            })
 
-function showTime(Counter) {
-	var query = new AV.Query(Counter);
-		var visitors= $('.leancloud_visitors');
-		query.greaterThanOrEqualTo("time", 0);		
-		query.find({
-			success: function(results) {
-				if (results.length == 0) {				
-					return;
-				}
-				var data = results;
-				visitors.each(function(){
-					var url = $(this).attr('id').trim();					
-					for (var i = 0; i < data.length; i++) {
-						var object = data[i];
-						var content = object.get('time');
-						var _url = object.get('url')
-						if(url == _url){
-							$(this).text(content);
-						}
-					}
-				})
-				
-			},
-			error: function(object, error) {
-				console.log("Error: " + error.code + " " + error.message);
-			}
-		});
-}
+                        },
+                        error: function(object, error) {
+                            console.log("Error: " + error.code + " " + error.message);
+                        }
+                    });
+                }
 
-function addCount(Counter) {
-	var Counter = AV.Object.extend("Counter");
-	url = $(".leancloud_visitors").attr('id').trim();
-	title = $(".leancloud_visitors").attr('data-flag-title').trim();
-	var query = new AV.Query(Counter);
-	query.equalTo("url", url);
-	query.find({
-		success: function(results) {
-			if (results.length > 0) {
-				var counter = results[0];
-				counter.fetchWhenSave(true);
-				counter.increment("time");
-				counter.save(null, {
-					success: function(counter) {
-						var content = counter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(counter, error) {
-						console.log('Failed to save Visitor num, with error message: ' + error.message);
-					}
-				});
-			} else {
-				var newcounter = new Counter();
-				newcounter.set("title", title);
-				newcounter.set("url", url);
-				newcounter.set("time", 1);
-				newcounter.save(null, {
-					success: function(newcounter) {
-					    console.log("newcounter.get('time')="+newcounter.get('time'));
-						var content = newcounter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(newcounter, error) {
-						console.log('Failed to create');
-					}
-				});
-			}
-		},
-		error: function(error) {
-			console.log('Error:' + error.code + " " + error.message);
-		}
-	});
-}
-$(function() {
-	var Counter = AV.Object.extend("Counter");
-	if ($('.leancloud_visitors').length == 1) {
-		addCount(Counter);
-	} else {
-		showTime(Counter);
-	}
-}); 
-</script>
-
+                function addCount(Counter) {
+                    var Counter = AV.Object.extend("Counter");
+                    url = $(".leancloud_visitors").attr('id').trim();
+                    title = $(".leancloud_visitors").attr('data-flag-title').trim();
+                    var query = new AV.Query(Counter);
+                    query.equalTo("url", url);
+                    query.find({
+                        success: function(results) {
+                            if (results.length > 0) {
+                                var counter = results[0];
+                                counter.fetchWhenSave(true);
+                                counter.increment("time");
+                                counter.save(null, {
+                                    success: function(counter) {
+                                        var content = counter.get('time');
+                                        $(document.getElementById(url)).text(content);
+                                    },
+                                    error: function(counter, error) {
+                                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                                    }
+                                });
+                            } else {
+                                var newcounter = new Counter();
+                                newcounter.set("title", title);
+                                newcounter.set("url", url);
+                                newcounter.set("time", 1);
+                                newcounter.save(null, {
+                                    success: function(newcounter) {
+                                        console.log("newcounter.get('time')=" + newcounter.get('time'));
+                                        var content = newcounter.get('time');
+                                        $(document.getElementById(url)).text(content);
+                                    },
+                                    error: function(newcounter, error) {
+                                        console.log('Failed to create');
+                                    }
+                                });
+                            }
+                        },
+                        error: function(error) {
+                            console.log('Error:' + error.code + " " + error.message);
+                        }
+                    });
+                }
+                $(function() {
+                    var Counter = AV.Object.extend("Counter");
+                    if ($('.leancloud_visitors').length == 1) {
+                        addCount(Counter);
+                    } else {
+                        showTime(Counter);
+                    }
+                });
+            </script>
+            
 
 
    
